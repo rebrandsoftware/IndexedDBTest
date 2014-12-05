@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>
+      IndexedDBTest
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <!-- start jquery mobile -->
+    <link rel="stylesheet" href="themes/YellowRedGreen.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    
+    <link rel="stylesheet" href="lib/jqm/jquery.mobile.structure-1.4.4.min.css" />
+    <script type="text/javascript" src="lib/jq/jquery-2.1.1.min.js">
+    </script>
+    <script type="text/javascript" src="lib/jqm/jquery.mobile-1.4.4.min.js"></script>
+    <!-- start phonegap  -->
+    <script type="text/javascript" src="phonegap.js">
+    </script>
+    <!-- end phonegap  -->
+    
+  </head>
+  
+  <body>
+    
+    <!-- Home -->
+    <div data-role="page" id="home">
+      <div data-theme="a" data-role="header">
+        <h3>
+          IndexedDBTest 
+        </h3>
+        
+      </div>
+      <div class="ui-content">
+        <a data-role="button" id="btnSavePlayer" data-theme="d" href="#" data-icon="action" data-iconpos="left">
+          Add Player MikeGibson
+        </a>
+        
+        <a data-role="button" id="btnSavePlayer2" data-theme="d" href="#" data-icon="action" data-iconpos="left">
+          Add Player JenGibson
+        </a>
+       
+       <a data-role="button" id="btnGetPlayer" data-theme="d" href="#" data-icon="action" data-iconpos="left" >
+          Get Player MikeGibson
+        </a>
+        
+        <a data-role="button" id="btnGetPlayer2" data-theme="d" href="#" data-icon="action" data-iconpos="left" >
+          Get Player JenGibson
+        </a>
+        
+        <a data-role="button" id="btnGetPlayers" data-theme="d" href="#" data-icon="action" data-iconpos="left" >
+          Get All Players
+        </a>
+        
+        <a data-role="button" id="btnHidePlayer" data-theme="d" href="#" data-icon="action" data-iconpos="left" >
+          Hide Player MikeGibson
+        </a>
+        
+        <a data-role="button" id="btnDelPlayerForever" data-theme="d" href="#" data-icon="action" data-iconpos="left" >
+          Delete Player MikeGibson
+        </a>
+        
+        <a data-role="button" id="btnSaveSetting" data-theme="d" href="#" data-icon="action" data-iconpos="left">
+          Save Setting
+        </a>
+       
+       <a data-role="button" id="btnGetSetting" data-theme="d" href="#" data-icon="action" data-iconpos="left" >
+          Get Setting
+        </a>
+        
+        
+       
+        </div>
+
+    </div>
+    
+    <!-- END load local javascript -->
+    <script type="text/javascript" src="js/core/device.js">
+    </script>
+    <script type="text/javascript" src="js/core/globals.js">
+    </script>
+    
+    <script type="text/javascript" src="js/objects.js">
+    </script>
+    
+    <script type="text/javascript" src="js/storage/websql-store.js">
+    </script>
+    <script type="text/javascript" src="js/storage/localstorage.js">
+    </script>
+    <script type="text/javascript" src="js/storage/indexed-db.js">
+    </script>
+    
+    <script type="text/javascript" src="js/main.js">
+    </script>
+    
+    
+     <script type="text/javascript" src="js/onDeviceReady.js">
+     </script>
+    
+  </body>
+  
+</html>
